@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <TopNavBar />
-      <main className="pt-20">
+      <main>
         <Hero />
         <Marquee />
         <Moodboard />

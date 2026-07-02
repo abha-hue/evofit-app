@@ -1,17 +1,5 @@
 import type { Metadata } from "next";
-import { Anton, Montserrat } from "next/font/google";
 import "./globals.css";
-
-const anton = Anton({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-anton",
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-});
 
 export const metadata: Metadata = {
   title: "EVOFIT | FORGED IN DISCIPLINE",
@@ -32,9 +20,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${anton.variable} ${montserrat.variable} h-full antialiased dark`}
+      className="h-full antialiased dark"
     >
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"

@@ -68,14 +68,14 @@
   --spacing-margin-desktop: 40px;
   --spacing-stack-md: 16px;
 
-  --font-caption: var(--font-montserrat);
-  --font-body-md: var(--font-montserrat);
-  --font-label-bold: var(--font-montserrat);
-  --font-headline-lg-mobile: var(--font-anton);
-  --font-display-xl: var(--font-anton);
-  --font-headline-md: var(--font-anton);
-  --font-body-lg: var(--font-montserrat);
-  --font-headline-lg: var(--font-anton);
+  --font-caption: "Montserrat", sans-serif;
+  --font-body-md: "Montserrat", sans-serif;
+  --font-label-bold: "Montserrat", sans-serif;
+  --font-headline-lg-mobile: "Anton", sans-serif;
+  --font-display-xl: "Anton", sans-serif;
+  --font-headline-md: "Anton", sans-serif;
+  --font-body-lg: "Montserrat", sans-serif;
+  --font-headline-lg: "Anton", sans-serif;
 
   --text-caption: 12px;
   --text-caption--line-height: 16px;
@@ -167,6 +167,10 @@
 .scroll-animate.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
